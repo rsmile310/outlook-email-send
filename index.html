@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sci-Fi_Nobels_v2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <style>
+      @font-face {
+        font-family: "Oswald";
+        src: url("./font/Oswald-Regular.ttf");
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      .main-container {
+        width: 1080px;
+        max-width: 100%;
+        margin: 0 auto;
+        font-family: "Oswald";
+      }
+      .main-container tr > td > div {
+        margin-bottom: 48px;
+      }
+      .main-container table {
+        width: 100%;
+      }
+      img {
+        max-width: 100%;
+      }
+      a {
+        text-decoration: none;
+      }
+      button {
+        cursor: pointer;
+      }
+      p {
+        margin: 0;
+      }
+      .mb-16 {
+        margin-bottom: 16px;
+      }
+      .mb-24 {
+        margin-bottom: 24px;
+      }
+      .mb-48 {
+        margin-bottom: 48px;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .w-100 {
+        width: 100%;
+      }
+      .fw-bold {
+        font-weight: bold;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .default-btn {
+        width: 297px;
+        height: 53px;
+        border-radius: 15px;
+        background-image: url(./images/button_img.png);
+        background-size: 100% 100%;
+        border: 0px;
+        font-size: 27px;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: "Oswald";
+      }
+      form {
+        max-width: 370px;
+        margin-left: auto;
+        text-align: center;
+        border-radius: 16px;
+        padding: 18px 36px 36px;
+        background-color: rgba(80, 96, 239, 0.6);
+      }
+      .form-group {
+        margin-bottom: 16px;
+      }
+      form input,
+      textarea {
+        background-color: #dbd8d8;
+        border: none;
+        border-radius: 8px;
+        width: 100%;
+        outline: none;
+        padding: 8px 12px;
+        font-size: 22px;
+        letter-spacing: 0px;
+        font-weight: 300;
+      }
+      .text-title1 {
+        font-size: 49px;
+        line-height: 11px;
+        color: #000000;
+        font-weight: 400;
+        text-align: center;
+      }
+      .text-title2 {
+        font-size: 46px;
+        color: #383a3a;
+        font-weight: 700;
+        text-align: center;
+      }
+      .text-title3 {
+        font-size: 44px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        font-weight: 700;
+        text-align: center;
+      }
+      .text-title4 {
+        font-size: 27px;
+        letter-spacing: 0px;
+        font-weight: 700;
+        text-align: center;
+      }
+      .text-body1 {
+        font-size: 22px;
+        color: #383a3a;
+        font-weight: 400;
+      }
+      .text-white {
+        color: #fff;
+      }
+      .text-black {
+        color: #000;
+      }
+      .hero-section {
+        position: relative;
+        width: 100%;
+        min-height: 620px;
+        background-image: url(./images/hero_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center left;
+        padding: 50px 48px;
+      }
+      .hero-section > div:first-child {
+        max-width: 796px;
+        margin: 0 auto 25px;
+      }
+      .main-section {
+        padding: 42px 38px;
+        background-image: url(./images/main_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .main-section > div:first-child {
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 24px;
+      }
+      .main-section > div:nth-child(2) {
+        max-width: 758px;
+        margin: 48px auto;
+        text-align: center;
+      }
+      .main-section > div:last-child {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .main-section > div:last-child > div:first-child {
+        width: 36%;
+        padding-right: 24px;
+      }
+      .main-section > div:last-child > div:last-child {
+        width: 64%;
+      }
+      .main-section hr {
+        margin-top: 34px;
+        margin-bottom: 34px;
+      }
+      @media screen and (max-width: 991px) {
+        .main-section > div:last-child > div:first-child,
+        .main-section > div:last-child > div:last-child {
+          width: 100% !important;
+          padding-right: 0;
+        }
+        .main-section > div:last-child > div:first-child img {
+          width: 331px;
+        }
+      }
+      .main-section > div:last-child > div:first-child {
+        width: 36%;
+        padding-right: 24px;
+      }
+      @media screen and (max-width: 576px) {
+        .text-title2 {
+          font-size: 36px;
+        }
+        .text-title4 {
+          font-size: 24px;
+        }
+      }
+    </style>
+    <div class="main-container">
+      <table class="table" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td>
+              <section class="hero-section">
+                <div>
+                  <p class="text-title4 text-center text-white">
+                    The innovative Nobel Range products redefining reliability,
+                    energy efficiency, ease of maintenance, and lowering energy
+                    and power costs of compressed air.
+                  </p>
+                </div>
+                <div class="text-center">
+                  <form id="emailForm">
+                    <div><p class="text-title3 mb-24">Enquire Here</p></div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Name:"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email:"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        id="telephone"
+                        name="telephone"
+                        placeholder="Telephone:"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        id="companyName"
+                        name="companyName"
+                        placeholder="Company Name:"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <textarea
+                        type="text"
+                        id="message"
+                        name="message"
+                        placeholder="Message:"
+                        rows="2"
+                        required
+                      ></textarea>
+                    </div>
+                    <div>
+                      <button class="default-btn">SUBMIT</button>
+                    </div>
+                  </form>
+                </div>
+              </section>
+              <section class="main-section">
+                <div class="text-center">
+                  <p class="text-title4 mb-24">
+                    Why choose a screw compressor with Permanent Magnet motor?
+                  </p>
+                  <p class="text-body1 mb-24">
+                    The energy costs linked to an air compressors operation
+                    during its life cycle representu more than 80% of the total
+                    life cycle costs. For Power System the improved energy
+                    efficiency of its products represents a key objective. This
+                    objective is achieved with the use of Permanent Magnet
+                    motors in IE4 Super Premium Efficiency category, along with
+                    the employment of our own, latest generation compressor
+                    air-ends.
+                  </p>
+                  <p class="text-body1">
+                    The application of these cutting- edge technologies,
+                    provides all users an air compressor with superior energy
+                    saving characteristics. The compressors from this new range
+                    offer greater flexibility in the delivery of compressed air.
+                    The output flow of compressed air may span a capacity range
+                    of between 15% to 100% of the maximum flow rate. This makes
+                    it possible to greatly reduce waste full unloaded operation,
+                    saving significant amounts of energy and minimising
+                    component wear, whilst adding greater reliability and longer
+                    service life.
+                  </p>
+                </div>
+                <div>
+                  <p class="text-title4 mb-16">
+                    The New Nobel Range - 5.5 kW to 90 kW
+                  </p>
+                  <div>
+                    <img class="w-100" src="./images/novel_range.png" alt="" />
+                  </div>
+                </div>
+                <hr />
+                <p class="text-title2">
+                  Fill the form above for energy saving advice today!
+                </p>
+                <hr />
+                <div>
+                  <div>
+                    <img class="w-100" src="./images/ie4.png" alt="" />
+                  </div>
+                  <div>
+                    <p class="text-body1 mb-24">
+                      The compressed air generated is aligned to the system
+                      requirements and is achieved by regulating the speed of
+                      the electric motor, which can range from 15% to 100% of
+                      the maximum speed.
+                    </p>
+
+                    <p class="text-body1">
+                      Excellent and precise pressure control of the pneumatic
+                      system, in a range 6 to 13 bar, depending on the chosen
+                      compressor model.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
